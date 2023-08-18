@@ -1,11 +1,17 @@
 # Citation Style untuk Skripsi Informatika Unmul
 
+- [Cara Instal](#cara-instal)
+  - [Zotero](#zotero)
+  - [Mendeley](#mendeley)
+  - [Yang lain](#yang-lain)
+- [Penjelasan](#penjelasan)
+
 ## Cara Instal
 
 0. Pastikan sudah instal software reference manager ([Zotero](https://www.zotero.org/download/), [Mendeley](https://www.mendeley.com/download-reference-manager/windows), [EndNote](https://endnote.com/downloads), dsb.).
-1. Clone repo ini atau download file [if.csl](https://github.com/zeerafle/if-citation-style/raw/master/if.csl)
+1. Clone repo ini atau download file [if.csl](https://raw.githubusercontent.com/zeerafle/if-citation-style/main/if.csl). Kalau di prompt Zotero untuk tambahkan style langsung ke Zotero, klik OK dan skip langkah-langkah dibawah.
 2. Di software reference managernya, cari pilihan tambahkan custom citation style yang support format .csl.
-3. Pilih file .csl yang sudah didownload. Kalo bingung ikut cara dibawah untuk [Zotero](https://github.com/zeerafle/if-citation-style#zotero) dan [Mendeley](https://github.com/zeerafle/if-citation-style#mendeley).
+3. Pilih file .csl yang sudah didownload. Kalo bingung ikut cara dibawah untuk [Zotero](#zotero) dan [Mendeley](#mendeley).
 
 Di word gunakan/atur citation style nya ke "Informatika Unmul"
 
@@ -26,7 +32,7 @@ Di word gunakan/atur citation style nya ke "Informatika Unmul"
 3. Pilih Citation Style
 4. Pilih More Styles
 5. Pilih Get More Styles
-6. Copy link berikut [https://github.com/zeerafle/if-citation-style/raw/master/if.csl](https://github.com/zeerafle/if-citation-style/raw/master/if.csl)
+6. Copy link berikut [https://raw.githubusercontent.com/zeerafle/if-citation-style/main/if.csl](https://raw.githubusercontent.com/zeerafle/if-citation-style/main/if.csl)
 7. Paste di kotak download style
 8. Klik download
 9. Done
