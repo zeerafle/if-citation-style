@@ -6,6 +6,12 @@
   - [Yang lain](#yang-lain)
 - [Penjelasan](#penjelasan)
 
+- [Cara Instal](#cara-instal)
+  - [Zotero](#zotero)
+  - [Mendeley](#mendeley)
+  - [Yang lain](#yang-lain)
+- [Penjelasan](#penjelasan)
+
 ## Cara Instal
 
 0. Pastikan sudah instal software reference manager ([Zotero](https://www.zotero.org/download/), [Mendeley](https://www.mendeley.com/download-reference-manager/windows), [EndNote](https://endnote.com/downloads), dsb.).
