@@ -14,9 +14,11 @@
     <category citation-format="author-date"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2023-07-16T22:56:49+00:00</updated>
+    <updated>2023-09-10T09:38:49+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
+  <locale xml:lang="id">
+  </locale>
   <locale xml:lang="en">
     <terms>
       <term name="editortranslator" form="short">
@@ -1263,22 +1265,52 @@
   </macro>
   <macro name="access">
     <choose>
-      <if variable="DOI" match="any">
+      <if type="bill legal_case legislation" match="any"/>
+      <else-if variable="DOI" match="any">
         <text variable="DOI" prefix="https://doi.org/"/>
-      </if>
+      </else-if>
       <else-if variable="URL">
         <group delimiter=" ">
+          <text term="retrieved" text-case="capitalize-first"/>
           <choose>
-            <if variable="issued status" match="none">
-              <group delimiter=" ">
-                <text term="retrieved" text-case="capitalize-first"/>
-                <date variable="accessed" form="text" suffix=","/>
-                <text term="from"/>
-              </group>
+            <if type="post post-weblog webpage book" match="any">
+              <date variable="accessed" form="text" suffix=","/>
             </if>
+          </choose>
+          <text term="from"/>
+          <choose>
+            <if type="report">
+              <choose>
+                <if variable="author editor translator" match="any">
+                  <!-- This should be localized -->
+                  <text variable="publisher" suffix=" website:"/>
+                </if>
+              </choose>
+            </if>
+            <else-if type="post post-weblog webpage" match="any">
+              <!-- This should be localized -->
+              <text variable="container-title" suffix=" website:"/>
+            </else-if>
           </choose>
           <text variable="URL"/>
         </group>
+      </else-if>
+      <else-if variable="archive">
+        <choose>
+          <if type="article article-journal article-magazine article-newspaper dataset paper-conference report speech thesis" match="any">
+            <!-- This section is for electronic database locations. Physical archives for these and other item types are called in 'publisher' macro -->
+            <choose>
+              <if variable="archive-place" match="none">
+                <group delimiter=" ">
+                  <text term="retrieved" text-case="capitalize-first"/>
+                  <text term="from"/>
+                  <text variable="archive" suffix="."/>
+                  <text variable="archive_location" prefix="(" suffix=")"/>
+                </group>
+              </if>
+            </choose>
+          </if>
+        </choose>
       </else-if>
     </choose>
   </macro>

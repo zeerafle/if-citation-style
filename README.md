@@ -51,5 +51,6 @@ Di template skripsi (di template ppt lebih tepatnya), disebutkan, dan saya kutip
 4. Jika dilihat dengan seksama, penulisan nama penulis yang terakhir tidak diawali dengan simbol dan (&). Sementara penulisan pada style APA, penulis terakhir diawali dengan simbol &.
 5. Penulisan daftar pustaka style APA edisi ke-7 dengan penulis yang lebih dari 21, cantumkan 19 penulis pertama, kemudian sisipkan elipsis (tiga titik), tetapi tanpa simbol &, dan kemudian tambahkan penulis terakhir. Yang edisi ke-6 cantumkan 6 penulis pertama. Tapi, kata beberapa dosen, biar seratus pun ditulis semua.
 6. Terakhir, semoga terakhir. Spacing. Di template, daftar pustaka spacingnya 1,5, memang tidak disalahkan dosen, tapi ketika dikumpul ke ... (lupa, ke wakil dekan atau apa gitu), bakal dicek lagi sama ibunya. Spacing nya daftar pustaka harus single dan spacing setiap entri adalah satu baris baru single.
+7. [Update] Kalau e-book, tambahkan urlnya dan tanggal nya karena bisa saja di lain waktu ketika akses urlnya e-book nya atau konten nya sudah tidak ada atau berubah.
 
 Jadi untuk memenuhi semua ketentuan tersebut dibuatlah style sitasi ini.
