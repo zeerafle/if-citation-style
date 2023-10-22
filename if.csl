@@ -18,6 +18,9 @@
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="id">
+  <terms>
+      <term name="letter">komunikasi personal</term>
+  </terms>
   </locale>
   <locale xml:lang="en">
     <terms>
