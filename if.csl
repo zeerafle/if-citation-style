@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded">
-<info>
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
     <title>Informatika Unmul</title>
     <title-short>IFU</title-short>
-    <id>if</id>
-    <link href="http://www.zotero.org/styles/apa" rel="self"/>
+    <id>http://www.zotero.org/styles/informatika-unmul</id>
+    <link href="http://www.zotero.org/styles/informatika-unmul" rel="self"/>
     <link href="http://www.zotero.org/styles/apa-6th-edition" rel="template"/>
     <link href="https://apastyle.apa.org/style-grammar-guidelines/references/examples" rel="documentation"/>
     <author>
@@ -14,13 +15,13 @@
     <category citation-format="author-date"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2023-09-10T09:38:49+00:00</updated>
+    <updated>2024-10-01T03:23:33+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="id">
-  <terms>
+    <terms>
       <term name="letter">komunikasi personal</term>
-  </terms>
+    </terms>
   </locale>
   <locale xml:lang="en">
     <terms>
@@ -126,7 +127,7 @@
   </locale>
   <macro name="author-bib">
     <names variable="composer" delimiter=", ">
-      <name name-as-sort-order="all" sort-separator=", " initialize-with=". " delimiter=", " delimiter-precedes-last="always"/>
+      <name and="symbol" delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
       <substitute>
         <names variable="author"/>
         <names variable="illustrator"/>
@@ -1285,13 +1286,11 @@
             <if type="report">
               <choose>
                 <if variable="author editor translator" match="any">
-                  <!-- This should be localized -->
                   <text variable="publisher" suffix=" website:"/>
                 </if>
               </choose>
             </if>
             <else-if type="post post-weblog webpage" match="any">
-              <!-- This should be localized -->
               <text variable="container-title" suffix=" website:"/>
             </else-if>
           </choose>
@@ -1301,7 +1300,6 @@
       <else-if variable="archive">
         <choose>
           <if type="article article-journal article-magazine article-newspaper dataset paper-conference report speech thesis" match="any">
-            <!-- This section is for electronic database locations. Physical archives for these and other item types are called in 'publisher' macro -->
             <choose>
               <if variable="archive-place" match="none">
                 <group delimiter=" ">
@@ -1320,12 +1318,9 @@
   <macro name="event">
     <choose>
       <if variable="event event-title" match="any">
-        <!-- To prevent Zotero from printing event-place due to its double-mapping of all 'place' to
-             both publisher-place and event-place. Remove this 'choose' when that is changed. -->
         <choose>
           <if variable="event" type="speech paper-conference" match="any">
             <choose>
-              <!-- Don't print event info if published in a proceedings -->
               <if variable="collection-editor editor issue page volume" match="none">
                 <group delimiter=" ">
                   <text variable="genre" text-case="capitalize-first"/>
